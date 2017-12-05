@@ -1,0 +1,10 @@
+[
+    {
+        "content": "index",
+        "output": "/",
+        "vars": {
+            "title": "Welcome to Taro",
+            "description": "This is a test page for the Taro static site generator"
+        }
+    }
+]

@@ -1,0 +1,23 @@
+{
+    "private": true,
+    "scripts": {
+        "cleanup": "rimraf dist/css/app.*.css dist/js/app.*.js",
+        "preproduction": "npm run cleanup",
+        "dev": "cross-env NODE_ENV=development webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "cross-env NODE_ENV=development webpack --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "production": "cross-env NODE_ENV=production webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "taro": "php taro build"
+    },
+    "dependencies": {
+        "calcite": "^0.1.0",
+        "font-awesome": "^4.7.0",
+        "jquery": "^3.2.1",
+        "laravel-mix": "^0.11.4",
+        "particle.js": "^1.0.7",
+        "particles.js": "^2.0.0",
+        "purify-css": "^1.2.5"
+    },
+    "devDependencies": {
+        "purifycss-webpack": "^0.7.0"
+    }
+}

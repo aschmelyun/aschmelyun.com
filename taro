@@ -1,0 +1,89 @@
+#!/usr/bin/env php
+<?php
+
+require 'vendor/autoload.php';
+
+use Philo\Blade\Blade;
+
+class Taro 
+{
+    public $version = '0.1.0';
+    public $views = __DIR__ . '/views';
+    public $cache = __DIR__ . '/cache';
+    public $manifest = __DIR__ . '/taro.json';
+    public $content_prefix = 'content.';
+    public $output_root = 'dist';
+    public $mix_manifest = __DIR__ . '/mix-manifest.json';
+    
+    private $blade;
+    private $pages;
+    private $process_time = [];
+
+    public function __construct()
+    {
+        $this->blade = new Blade($this->views, $this->cache);
+        $this->process_time['started'] = microtime(true);
+        $this->mix_manifest = json_decode(file_get_contents($this->mix_manifest), true);
+    }
+
+    public function init()
+    {
+        $this->pages = json_decode(file_get_contents($this->manifest));
+        foreach($this->pages as $page) {
+            $this->renderPage($page);
+        }
+
+        $this->finish();
+    }
+
+    public function renderPage($page)
+    {
+        $started = microtime(true);
+        $content = $this->blade->view()
+            ->make($this->content_prefix . $page->content, get_object_vars($page->vars))
+            ->with('mix_manifest', $this->mix_manifest)
+            ->render();
+
+        $output_path = $this->determineOutputPath($page->output);
+
+        $stored = file_put_contents($output_path, $content);
+        $ended = microtime(true);
+
+        if($stored) {
+            echo "👍 \033[1m " . $page->content . "\033[0m built in " . round((($ended - $started)*1000), 3) . " milliseconds." . PHP_EOL;
+        } else {
+            echo "❌ \033[1m " . $page->content . "\033[0m could not be built." . PHP_EOL;
+        }
+    }
+
+    public function determineOutputPath($output)
+    {
+        $output_folder = $this->output_root . $output;
+        if(!is_dir($output_folder))
+            mkdir($output_folder, 0755, true);
+
+        $output_path = $output_folder . '/index.html';
+        return $output_path;
+    }
+
+    public function finish()
+    {
+        $this->process_time['ended'] = microtime(true);
+        echo "🎁 \033[1m " . 
+            count($this->pages) . 
+            " pages \033[0mbuilt in " . 
+            round((($this->process_time['ended'] - $this->process_time['started'])*1000), 3) . 
+            " milliseconds." . 
+            PHP_EOL;
+    }
+
+}
+
+$taro = new Taro;
+if(isset($argv[1]) && $argv[1] === 'build') {
+    $taro->init();
+    exit();
+}
+
+echo 'V' . $taro->version . PHP_EOL;
+exit();

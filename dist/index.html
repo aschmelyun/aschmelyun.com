@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Welcome to Taro</title>
+<link rel="stylesheet" type="text/css" href="/assets/css/app.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700|Source+Serif+Pro" rel="stylesheet"> 
+    <style>
+        body {
+            font-family: "Roboto", sans-serif;
+            background: #f5f5f5;
+            color: #212121;
+        }
+        .font-alt {
+            font-family: "Source Serif Pro", serif;
+        }
+        .particles-js-canvas-el {
+            position: fixed;
+        }
+    </style>
+</head>
+<body class="default bs-border-box">
+    <div class="wrapper">
+        <header class="header-main color-white text-center flex jc-center" id="stars" style="height:100vh; background:#5a1225; background: -moz-linear-gradient(top, #5a1225 0%, #f16377 100%); background: -webkit-linear-gradient(top, #5a1225 0%, #f16377 100%); background:linear-gradient(to bottom, #5a1225 0%, #f16377 100%);">
+    <div class="pos-fixed" id="headerText" style="top:30%; text-shadow: 0 1px 2px rgba(0,0,0,0.25);">
+        <h1 class="block font-normal font-alt" style="font-size:3.5rem;">Hello, I'm Andrew Schmelyun</h1>
+        <h4 class="block font-x-large mt-2" style="font-weight:100;">A full-stack PHP developer specializing in Laravel, Vue, and PWAs</h4>
+        <ul class="ls-none flex jc-center p-0 m-0 mt-6">
+            <li class="block mlr-2"><a href="https://instagram.com/aschmelyun" class="color-white hover--color-barely-clear-white anim-all-very-quick" target="_blank"><i class="fa fa-2x fa-instagram"></i></a></li>
+            <li class="block mlr-2"><a href="https://facebook.com/andrew.schmelyun.7" class="color-white hover--color-barely-clear-white anim-all-very-quick" target="_blank"><i class="fa fa-2x fa-facebook-square"></i></a></li>
+            <li class="block mlr-2"><a href="https://twitter.com/aschmelyun" class="color-white hover--color-barely-clear-white anim-all-very-quick" target="_blank"><i class="fa fa-2x fa-twitter-square"></i></a></li>
+            <li class="block mlr-2"><a href="https://github.com/aschmelyun" class="color-white hover--color-barely-clear-white anim-all-very-quick" target="_blank"><i class="fa fa-2x fa-github-square"></i></a></li>
+        </ul>
+    </div>
+    <div class="pos-absolute width-full" id="navWrapper" style="bottom:0; z-index:999; background:#212121;">
+        <nav class="nav-main">
+            <ul class="ls-none flex jc-center p-0 m-0 font-small font-uppercase letter-space-1">
+                <li class="block"><a class="block color-white hover--bg-semi-clear-black anim-all-quick ptb-2 pt-3 plr-5" href="#">Home</a></li>
+                <li class="block"><a class="block color-white hover--bg-semi-clear-black anim-all-quick ptb-2 pt-3 plr-5" href="#">Projects</a></li>
+                <li class="block"><a class="block color-white hover--bg-semi-clear-black anim-all-quick ptb-2 pt-3 plr-5" href="#">Experience</a></li>
+                <li class="block"><a class="block color-white hover--bg-semi-clear-black anim-all-quick ptb-2 pt-3 plr-5" href="#">Resume</a></li>
+                <li class="block"><a class="block color-white hover--bg-semi-clear-black anim-all-quick ptb-2 pt-3 plr-5" href="#">Contact</a></li>
+                <li class="block"><a class="block color-white hover--bg-semi-clear-black anim-all-quick ptb-2 pt-3 plr-5" href="#">Blog</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="pos-absolute width-full" style="bottom:44px; pointer-events:none; z-index:999;">
+        <img src="/assets/img/city.png" class="block" style="width:100%;">
+    </div>
+</header>
+        <main class="main-content">
+                <div class="container">
+        <div id="projects" class="pos-relative" style="background:#f5f5f5; z-index:99;">
+    <h2 class="text-center font-alt pt-6 pb-4" style="font-size:2rem;">Projects</h2>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="bg-white border-radius-1 plr-5 ptb-4 mb-4">
+                <h3>💎 Calcite</h3>
+                <p class="mb-0 mt-1 font-small line-height-3">A front-end framework for rapid web development and 
+                prototyping. Calcite was created to be a powerful development toolbelt, utilizing low-level utility classes 
+                in order to control and modify an element's specific styling. This website uses it combined with 
+                purify-css, yielding a unique looking front-end with less than 10kb of production CSS.</p>
+                <a href="https://github.com/aschmelyun/calcite" class="inline-block font-bold mt-2 font-x-small color-red hover--color-red-dark">CHECK IT OUT <i class="fa fa-long-arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="bg-white border-radius-1 plr-5 ptb-4 mb-4">
+                <h3>📨 Shallot</h3>
+                <p class="mb-0 mt-1 font-small line-height-3">Shallot was a solution to a problem where I needed to send out emails to a client 
+                at a certain time period, using my custom-domain email address. I knew some existed for 
+                Gmail, but nothing that I could readily find for my needs. Shallot lets you 
+                write and schedule simple emails that get sent out under any email address you specify.</p>
+                <a href="http://goshallot.com" class="inline-block font-bold mt-2 font-x-small color-red hover--color-red-dark">CHECK IT OUT <i class="fa fa-long-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="bg-white border-radius-1 plr-5 ptb-4">
+                <h3>🦐 Taro</h3>
+                <p class="mb-0 mt-1 font-small line-height-3">From a desire to create a super simplistic static-site generator 
+                Taro was born. It utilizes Laravel Blade templating and comes with Laravel Mix's asset compiler pre-configured. 
+                Pages are organized through a single JSON file, where SEO details can be configured and additional variables 
+                added and passed through to the Blade templates. With build speed as a priority, compiling a modest 20 page 
+                site takes ~50 milliseconds.</p>
+                <a href="https://github.com/aschmelyun/taro" class="inline-block font-bold mt-2 font-x-small color-red hover--color-red-dark">CHECK IT OUT <i class="fa fa-long-arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="bg-white border-radius-1 plr-5 ptb-4">
+                <h3>📋 TCHiring</h3>
+                <p class="mb-0 mt-1 font-small line-height-3">I noticed that there weren't really any job boards specifically 
+                targeted for my area, so I set out to make one and populate it. The back-end is a Laravel application with 
+                a front-end built with Vue and Bootstrap's grid. During regular intervals a cron job calls the Indeed.com API 
+                and pulls in jobs within the tri-county area. Signing into the administration panel lets you moderate what 
+                jobs appear on the front-end.</p>
+                <a href="https://tchiring.com" class="inline-block font-bold mt-2 font-x-small color-red hover--color-red-dark">CHECK IT OUT <i class="fa fa-long-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>    </div>
+    <div class="pos-relative mt-10 mb-8" style="z-index:99; background: #0d432f; background-image:url('/assets/img/geometry.png'), -moz-linear-gradient(-45deg, #0d432f 0%, #42a28f 100%); background-image:url('/assets/img/geometry.png'), -webkit-linear-gradient(-45deg, #0d432f 0%,#42a28f 100%); background-image:url('/assets/img/geometry.png'), linear-gradient(135deg, #0d432f 0%,#42a28f 100%); background-attachment: fixed;">
+        <div class="container">
+            <div id="experience" class="pos-relative pb-8">
+    <h2 class="text-center font-alt pt-6 pb-4 color-white" style="font-size:2rem;">Experience</h2>
+    <div class="row line-height-4">
+        <div class="col-sm-4 text-center">
+            <ul class="p-0 m-0 color-barely-clear-white inline-block text-left font-small ls-none">
+                <li class="font-bold color-white font-regular">Back-end</li>
+                <li>PHP</li>
+                <li>Laravel</li>
+                <li>MySQL</li>
+                <li>WordPress Themes + Plugins</li>
+                <li>Magento</li>
+                <li>API Development</li>
+                <li>Offline Access</li>
+            </ul>
+        </div>
+        <div class="col-sm-4 text-center">
+            <ul class="p-0 m-0 color-barely-clear-white inline-block text-left font-small ls-none">
+                <li class="font-bold color-white font-regular">Front-end</li>
+                <li>JavaScript</li>
+                <li>Vue</li>
+                <li>SASS/SCSS</li>
+                <li>Gulp/Webpack</li>
+                <li>Service Workers</li>
+                <li>Cordova</li>
+                <li>React + React Native</li>
+            </ul>
+        </div>
+        <div class="col-sm-4 text-center">
+            <ul class="p-0 m-0 color-barely-clear-white inline-block text-left font-small ls-none">
+                <li class="font-bold color-white font-regular">Tools</li>
+                <li>Photoshop</li>
+                <li>Sketch</li>
+                <li>Abstract</li>
+                <li>Sequel Pro</li>
+                <li>Postman</li>
+                <li>VS Code</li>
+                <li>PHPStorm</li>
+            </ul>
+        </div>
+    </div>
+</div>        </div>
+    </div>
+    <div class="container">
+        <div id="resume" class="pos-relative">
+    <h2 class="text-center font-alt pb-4" style="font-size:2rem;">Resume</h2>
+    <div class="row flex">
+        <div class="col-sm-3 flex">
+            <div class="bg-white border-radius-1 plr-5 ptb-4 mb-4 border-top-black border-width-3" style="border-top-color:#B34035;">
+                <h3>Electric Pulp</h3>
+                <span class="block font-x-small color-semi-clear-black">Nov 2016 - Present</span>
+                <p class="font-small line-height-3">Full-stack web developer with a focus on Laravel and Vue-based projects. Built APIs consumed by 
+                native applications and maintained high-traffic web 
+                servers. Developed PWAs that included push notifications, bluetooth location tracking, offline access, and graceful fallbacks 
+                for incompatible browsers.</p>
+            </div>
+        </div>
+        <div class="col-sm-3 flex">
+            <div class="bg-white border-radius-1 plr-5 ptb-4 mb-4 border-top-teal border-width-3">
+                <h3>Seacoast Bank</h3>
+                <span class="block font-x-small color-semi-clear-black">Aug 2015 - Apr 2017</span>
+                <p class="font-small line-height-3">Contract PHP development on private and public-facing banking 
+                websites and applications. Used various internal services and HubSpot API to integrate scheduling, maintenance requests, 
+                and inventory management into simplistic, mobile-friendly webapps.</p>
+            </div>
+        </div>
+        <div class="col-sm-3 flex">
+            <div class="bg-white border-radius-1 plr-5 ptb-4 mb-4 border-top-black border-width-3">
+                <h3>THAT Agency</h3>
+                <span class="block font-x-small color-semi-clear-black">Nov 2014 - Dec 2015</span>
+                <p class="font-small line-height-3">Full-stack web developer with a primary focus on WordPress websites 
+                and custom Laravel and Yii-powered web applications. Developed custom themes and plugins for use in high-traffic 
+                websites in the real estate, automotive, and e-commerce industries.</p>
+            </div>
+        </div>
+        <div class="col-sm-3 flex">
+            <div class="bg-white border-radius-1 plr-5 ptb-4 mb-4 border-top-red border-width-3">
+                <h3>Red Spot Interactive</h3>
+                <span class="block font-x-small color-semi-clear-black">Apr 2013 - Nov 2014</span>
+                <p class="font-small line-height-3">WordPress-powered web development for 
+                practices in the law, HVAC, and elective cosmetic surgery fields. Developed custom plugins that integrated 
+                with in-house APIs to manage incoming leads, as well as a custom loyalty rewards 
+                app for Android and iOS.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-2">
+        <div class="col-sm-6 col-sm-offset-3">
+            <div class="bg-white border-radius-1 plr-5 ptb-4 mb-4 border-top-blue border-width-3">
+                <h3>Freelance Development</h3>
+                <span class="block font-x-small color-semi-clear-black">Dec 2012 - Present</span>
+                <p class="font-small line-height-3">Full-stack PHP development for a wide variety of clients. Developed 
+                and maintained WordPress websites for small and medium businesses with custom plugins and/or service 
+                integrations, REST APIs to be consumed by native iOS and Android apps, and niche Laravel-powered SAAS applications.</p>
+            </div>
+        </div>
+    </div>
+</div>    </div>
+    <div class="pos-relative mt-8" style="background: #102940; background: -moz-linear-gradient(-45deg, #102940 0%, #4D71A7 100%); background: -webkit-linear-gradient(-45deg, #102940 0%,#4D71A7 100%); background: linear-gradient(135deg, #102940 0%,#4D71A7 100%); background-attachment: fixed;">
+        <div class="container">
+            <div id="contact" class="pos-relative pb-8">
+    <h2 class="text-center font-alt pt-6 pb-4 color-white" style="font-size:2rem;">Contact</h2>
+    <div class="row">
+        <div class="col-xs-12">
+            <p class="text-center color-barely-clear-white font-small mt-0">Want to chat? You can get in touch with me on 🐤 <a href="https://twitter.com/aschmelyun" class="color-white border-bottom-white hover--color-barely-clear-white" target="_blank" style="border-bottom-style: dotted;">Twitter</a> or through a good old-fashioned 📩 <a href="mailto:me@aschmelyun.com" class="color-white border-bottom-white hover--color-barely-clear-white" style="border-bottom-style:dotted;">email</a>.</p>
+        </div>
+    </div>
+</div>        </div>
+    </div>
+        </main>
+    </div>
+    <div class="pos-relative bg-barely-clear-black ptb-2">
+    <p class="font-x-small text-center color-half-clear-white m-0">&copy;2017 - Feel free to steal this, it's on <a href="https://github.com/aschmelyun/aschmelyun" target="_blank" class="color-barely-clear-white hover--color-white">github</a></p>
+</div>
+<script type="text/javascript" src="/assets/js/app.js"></script></body>
+</html>

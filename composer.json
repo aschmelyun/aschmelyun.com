@@ -1,0 +1,15 @@
+{
+    "name": "aschmelyun/taro",
+    "description": "A simple static site generator based on the Laravel blade templating engine",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Andrew Schmelyun",
+            "email": "schmelyun@gmail.com"
+        }
+    ],
+    "require": {
+        "philo/laravel-blade": "3.*",
+        "kevinlebrun/colors.php": "0.*"
+    }
+}

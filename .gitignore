@@ -1,0 +1,6 @@
+/cache/*
+node_modules
+vendor
+.DS_Store
+.vscode
+php_errors.log
