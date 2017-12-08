@@ -2,7 +2,14 @@ try {
     window.$ = window.jQuery = require('jquery');
 } catch(e) {}
 
+$(document).ready(function() {
+    determineScrollAndOpacity();
+});
 $(window).scroll(function() {
+    determineScrollAndOpacity();
+});
+
+function determineScrollAndOpacity() {
     var scrollPos = $(document).scrollTop();
     var scrollCutoff = Math.ceil($(window).height() * .70);
     var scrollOpacity = 1.0;
@@ -24,4 +31,4 @@ $(window).scroll(function() {
         $('#navWrapper').removeClass('pos-fixed').addClass('pos-absolute');
         $('#navWrapper').css('top', '').css('bottom', '0');
     }
-});
+}
