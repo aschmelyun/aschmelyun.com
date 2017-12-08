@@ -1,7 +1,7 @@
 {
     "private": true,
     "scripts": {
-        "cleanup": "rimraf dist/css/app.*.css dist/js/app.*.js",
+        "cleanup": "rimraf dist/assets/css/app.*.css dist/assets/js/app.*.js",
         "preproduction": "npm run cleanup",
         "dev": "cross-env NODE_ENV=development webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
         "watch": "cross-env NODE_ENV=development webpack --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
