@@ -3,8 +3,8 @@
         "content": "index",
         "output": "/",
         "vars": {
-            "title": "Welcome to Taro",
-            "description": "This is a test page for the Taro static site generator"
+            "title": "Andrew Schmelyun - Full-Stack PHP Developer",
+            "description": "Hello, I'm Andrew Schmelyun. I'm a full-stack PHP developer specializing in Laravel, Vue, and PWAs."
         }
     }
 ]

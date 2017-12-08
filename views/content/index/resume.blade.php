@@ -30,7 +30,7 @@
             </div>
         </div>
         <div class="col-sm-3 flex">
-            <div class="bg-white border-radius-1 plr-5 ptb-4 mb-4 border-top-red border-width-3">
+            <div class="bg-white border-radius-1 plr-5 ptb-4 border-top-red border-width-3 redspot">
                 <h3>Red Spot Interactive</h3>
                 <span class="block font-x-small color-semi-clear-black">Apr 2013 - Nov 2014</span>
                 <p class="font-small line-height-3">WordPress-powered web development for 

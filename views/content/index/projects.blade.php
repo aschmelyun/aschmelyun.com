@@ -1,7 +1,7 @@
 <div id="projects" class="pos-relative" style="background:#f5f5f5; z-index:99;">
     <h2 class="text-center font-alt pt-6 pb-4" style="font-size:2rem;">Projects</h2>
     <div class="row">
-        <div class="col-sm-6">
+        <div class="col-xs-12 col-sm-6">
             <div class="bg-white border-radius-1 plr-5 ptb-4 mb-4">
                 <h3>💎 Calcite</h3>
                 <p class="mb-0 mt-1 font-small line-height-3">A front-end framework for rapid web development and 
@@ -11,7 +11,7 @@
                 <a href="https://github.com/aschmelyun/calcite" class="inline-block font-bold mt-2 font-x-small color-red hover--color-red-dark">CHECK IT OUT <i class="fa fa-long-arrow-right"></i></a>
             </div>
         </div>
-        <div class="col-sm-6">
+        <div class="col-xs-12 col-sm-6">
             <div class="bg-white border-radius-1 plr-5 ptb-4 mb-4">
                 <h3>📨 Shallot</h3>
                 <p class="mb-0 mt-1 font-small line-height-3">Shallot was a solution to a problem where I needed to send out emails to a client 
@@ -23,8 +23,8 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-6">
-            <div class="bg-white border-radius-1 plr-5 ptb-4">
+        <div class="col-xs-12 col-sm-6">
+            <div class="bg-white border-radius-1 plr-5 ptb-4 mb-4">
                 <h3>🦐 Taro</h3>
                 <p class="mb-0 mt-1 font-small line-height-3">From a desire to create a super simplistic static-site generator 
                 Taro was born. It utilizes Laravel Blade templating and comes with Laravel Mix's asset compiler pre-configured. 
@@ -34,7 +34,7 @@
                 <a href="https://github.com/aschmelyun/taro" class="inline-block font-bold mt-2 font-x-small color-red hover--color-red-dark">CHECK IT OUT <i class="fa fa-long-arrow-right"></i></a>
             </div>
         </div>
-        <div class="col-sm-6">
+        <div class="col-xs-12 col-sm-6">
             <div class="bg-white border-radius-1 plr-5 ptb-4">
                 <h3>📋 TCHiring</h3>
                 <p class="mb-0 mt-1 font-small line-height-3">I noticed that there weren't really any job boards specifically 

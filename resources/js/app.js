@@ -2,13 +2,6 @@ try {
     window.$ = window.jQuery = require('jquery');
 } catch(e) {}
 
-require('particles.js');
-console.log(particlesJS);
-
-particlesJS.load('stars', '/particles.json', function() {
-    console.log('particle.js loaded');
-});
-
 $(window).scroll(function() {
     var scrollPos = $(document).scrollTop();
     var scrollCutoff = Math.ceil($(window).height() * .70);

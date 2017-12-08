@@ -4,27 +4,14 @@
     <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Welcome to Taro</title>
-<link rel="stylesheet" type="text/css" href="/assets/css/app.css">
+<title>Andrew Schmelyun - Full-Stack PHP Developer</title>
+<link rel="stylesheet" type="text/css" href="assets/css/app.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700|Source+Serif+Pro" rel="stylesheet"> 
-    <style>
-        body {
-            font-family: "Roboto", sans-serif;
-            background: #f5f5f5;
-            color: #212121;
-        }
-        .font-alt {
-            font-family: "Source Serif Pro", serif;
-        }
-        .particles-js-canvas-el {
-            position: fixed;
-        }
-    </style>
 </head>
 <body class="default bs-border-box">
     <div class="wrapper">
         <header class="header-main color-white text-center flex jc-center" id="stars" style="height:100vh; background:#5a1225; background: -moz-linear-gradient(top, #5a1225 0%, #f16377 100%); background: -webkit-linear-gradient(top, #5a1225 0%, #f16377 100%); background:linear-gradient(to bottom, #5a1225 0%, #f16377 100%);">
-    <div class="pos-fixed" id="headerText" style="top:30%; text-shadow: 0 1px 2px rgba(0,0,0,0.25);">
+    <div class="pos-fixed" id="headerText" style="text-shadow: 0 1px 2px rgba(0,0,0,0.25);">
         <h1 class="block font-normal font-alt" style="font-size:3.5rem;">Hello, I'm Andrew Schmelyun</h1>
         <h4 class="block font-x-large mt-2" style="font-weight:100;">A full-stack PHP developer specializing in Laravel, Vue, and PWAs</h4>
         <ul class="ls-none flex jc-center p-0 m-0 mt-6">
@@ -36,7 +23,7 @@
     </div>
     <div class="pos-absolute width-full" id="navWrapper" style="bottom:0; z-index:999; background:#212121;">
         <nav class="nav-main">
-            <ul class="ls-none flex jc-center p-0 m-0 font-small font-uppercase letter-space-1">
+            <ul class="ls-none flex p-0 m-0 font-small font-uppercase letter-space-1">
                 <li class="block"><a class="block color-white hover--bg-semi-clear-black anim-all-quick ptb-2 pt-3 plr-5" href="#">Home</a></li>
                 <li class="block"><a class="block color-white hover--bg-semi-clear-black anim-all-quick ptb-2 pt-3 plr-5" href="#">Projects</a></li>
                 <li class="block"><a class="block color-white hover--bg-semi-clear-black anim-all-quick ptb-2 pt-3 plr-5" href="#">Experience</a></li>
@@ -51,11 +38,11 @@
     </div>
 </header>
         <main class="main-content">
-                <div class="container">
+                <div class="container wrap">
         <div id="projects" class="pos-relative" style="background:#f5f5f5; z-index:99;">
     <h2 class="text-center font-alt pt-6 pb-4" style="font-size:2rem;">Projects</h2>
     <div class="row">
-        <div class="col-sm-6">
+        <div class="col-xs-12 col-sm-6">
             <div class="bg-white border-radius-1 plr-5 ptb-4 mb-4">
                 <h3>💎 Calcite</h3>
                 <p class="mb-0 mt-1 font-small line-height-3">A front-end framework for rapid web development and 
@@ -65,7 +52,7 @@
                 <a href="https://github.com/aschmelyun/calcite" class="inline-block font-bold mt-2 font-x-small color-red hover--color-red-dark">CHECK IT OUT <i class="fa fa-long-arrow-right"></i></a>
             </div>
         </div>
-        <div class="col-sm-6">
+        <div class="col-xs-12 col-sm-6">
             <div class="bg-white border-radius-1 plr-5 ptb-4 mb-4">
                 <h3>📨 Shallot</h3>
                 <p class="mb-0 mt-1 font-small line-height-3">Shallot was a solution to a problem where I needed to send out emails to a client 
@@ -77,8 +64,8 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-6">
-            <div class="bg-white border-radius-1 plr-5 ptb-4">
+        <div class="col-xs-12 col-sm-6">
+            <div class="bg-white border-radius-1 plr-5 ptb-4 mb-4">
                 <h3>🦐 Taro</h3>
                 <p class="mb-0 mt-1 font-small line-height-3">From a desire to create a super simplistic static-site generator 
                 Taro was born. It utilizes Laravel Blade templating and comes with Laravel Mix's asset compiler pre-configured. 
@@ -88,7 +75,7 @@
                 <a href="https://github.com/aschmelyun/taro" class="inline-block font-bold mt-2 font-x-small color-red hover--color-red-dark">CHECK IT OUT <i class="fa fa-long-arrow-right"></i></a>
             </div>
         </div>
-        <div class="col-sm-6">
+        <div class="col-xs-12 col-sm-6">
             <div class="bg-white border-radius-1 plr-5 ptb-4">
                 <h3>📋 TCHiring</h3>
                 <p class="mb-0 mt-1 font-small line-height-3">I noticed that there weren't really any job boards specifically 
@@ -102,12 +89,12 @@
     </div>
 </div>    </div>
     <div class="pos-relative mt-10 mb-8" style="z-index:99; background: #0d432f; background-image:url('/assets/img/geometry.png'), -moz-linear-gradient(-45deg, #0d432f 0%, #42a28f 100%); background-image:url('/assets/img/geometry.png'), -webkit-linear-gradient(-45deg, #0d432f 0%,#42a28f 100%); background-image:url('/assets/img/geometry.png'), linear-gradient(135deg, #0d432f 0%,#42a28f 100%); background-attachment: fixed;">
-        <div class="container">
+        <div class="container wrap">
             <div id="experience" class="pos-relative pb-8">
     <h2 class="text-center font-alt pt-6 pb-4 color-white" style="font-size:2rem;">Experience</h2>
     <div class="row line-height-4">
-        <div class="col-sm-4 text-center">
-            <ul class="p-0 m-0 color-barely-clear-white inline-block text-left font-small ls-none">
+        <div class="col-xs-12 col-sm-4 text-center">
+            <ul class="p-0 m-0 mb-6 color-barely-clear-white text-left font-small ls-none">
                 <li class="font-bold color-white font-regular">Back-end</li>
                 <li>PHP</li>
                 <li>Laravel</li>
@@ -118,8 +105,8 @@
                 <li>Offline Access</li>
             </ul>
         </div>
-        <div class="col-sm-4 text-center">
-            <ul class="p-0 m-0 color-barely-clear-white inline-block text-left font-small ls-none">
+        <div class="col-xs-12 col-sm-4 text-center">
+            <ul class="p-0 m-0 mb-6 color-barely-clear-white text-left font-small ls-none">
                 <li class="font-bold color-white font-regular">Front-end</li>
                 <li>JavaScript</li>
                 <li>Vue</li>
@@ -130,8 +117,8 @@
                 <li>React + React Native</li>
             </ul>
         </div>
-        <div class="col-sm-4 text-center">
-            <ul class="p-0 m-0 color-barely-clear-white inline-block text-left font-small ls-none">
+        <div class="col-xs-12 col-sm-4 text-center">
+            <ul class="p-0 m-0 color-barely-clear-white text-left font-small ls-none">
                 <li class="font-bold color-white font-regular">Tools</li>
                 <li>Photoshop</li>
                 <li>Sketch</li>
@@ -145,7 +132,7 @@
     </div>
 </div>        </div>
     </div>
-    <div class="container">
+    <div class="container wrap">
         <div id="resume" class="pos-relative">
     <h2 class="text-center font-alt pb-4" style="font-size:2rem;">Resume</h2>
     <div class="row flex">
@@ -178,7 +165,7 @@
             </div>
         </div>
         <div class="col-sm-3 flex">
-            <div class="bg-white border-radius-1 plr-5 ptb-4 mb-4 border-top-red border-width-3">
+            <div class="bg-white border-radius-1 plr-5 ptb-4 border-top-red border-width-3 redspot">
                 <h3>Red Spot Interactive</h3>
                 <span class="block font-x-small color-semi-clear-black">Apr 2013 - Nov 2014</span>
                 <p class="font-small line-height-3">WordPress-powered web development for 
@@ -201,7 +188,7 @@
     </div>
 </div>    </div>
     <div class="pos-relative mt-8" style="background: #102940; background: -moz-linear-gradient(-45deg, #102940 0%, #4D71A7 100%); background: -webkit-linear-gradient(-45deg, #102940 0%,#4D71A7 100%); background: linear-gradient(135deg, #102940 0%,#4D71A7 100%); background-attachment: fixed;">
-        <div class="container">
+        <div class="container wrap">
             <div id="contact" class="pos-relative pb-8">
     <h2 class="text-center font-alt pt-6 pb-4 color-white" style="font-size:2rem;">Contact</h2>
     <div class="row">
@@ -214,7 +201,7 @@
         </main>
     </div>
     <div class="pos-relative bg-barely-clear-black ptb-2">
-    <p class="font-x-small text-center color-half-clear-white m-0">&copy;2017 - Feel free to steal this, it's on <a href="https://github.com/aschmelyun/aschmelyun" target="_blank" class="color-barely-clear-white hover--color-white">github</a></p>
+    <p class="font-x-small text-center color-half-clear-white m-0">&copy;2017 - Feel free to steal this, it's on <a href="https://github.com/aschmelyun/aschmelyun.com" target="_blank" class="color-barely-clear-white hover--color-white">github</a></p>
 </div>
-<script type="text/javascript" src="/assets/js/app.js"></script></body>
+<script type="text/javascript" src="assets/js/app.js"></script></body>
 </html>

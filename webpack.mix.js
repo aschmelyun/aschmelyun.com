@@ -1,7 +1,10 @@
 let mix = require('laravel-mix').mix;
 
 mix.options({ 
-    processCssUrls: false
+    processCssUrls: false,
+    purifyCss: {
+        paths: ['dist/*.html']
+    }
 });
 
 mix.js('resources/js/app.js', './dist/assets/js')
