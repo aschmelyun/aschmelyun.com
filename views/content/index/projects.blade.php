@@ -8,7 +8,7 @@
                 prototyping. Calcite was created to be a powerful development toolbelt, utilizing low-level utility classes 
                 in order to control and modify an element's specific styling. This website uses it combined with 
                 purify-css, yielding a unique looking front-end with less than 10kb of production CSS.</p>
-                <a href="https://github.com/aschmelyun/calcite" class="inline-block font-bold mt-2 font-x-small color-red hover--color-red-dark">CHECK IT OUT <i class="fa fa-long-arrow-right"></i></a>
+                <a href="https://github.com/aschmelyun/calcite" rel="noopener" class="inline-block font-bold mt-2 font-x-small color-red hover--color-red-dark">CHECK IT OUT <i class="fa fa-long-arrow-right"></i></a>
             </div>
         </div>
         <div class="col-xs-12 col-sm-6">
@@ -18,7 +18,7 @@
                 at a certain time period, using my custom-domain email address. I knew some existed for 
                 Gmail, but nothing that I could readily find for my needs. Shallot lets you 
                 write and schedule simple emails that get sent out under any email address you specify.</p>
-                <a href="http://goshallot.com" class="inline-block font-bold mt-2 font-x-small color-red hover--color-red-dark">CHECK IT OUT <i class="fa fa-long-arrow-right"></i></a>
+                <a href="http://goshallot.com" rel="noopener" class="inline-block font-bold mt-2 font-x-small color-red hover--color-red-dark">CHECK IT OUT <i class="fa fa-long-arrow-right"></i></a>
             </div>
         </div>
     </div>
@@ -31,7 +31,7 @@
                 Pages are organized through a single JSON file, where SEO details can be configured and additional variables 
                 added and passed through to the Blade templates. With build speed as a priority, compiling a modest 20 page 
                 site takes ~50 milliseconds.</p>
-                <a href="https://github.com/aschmelyun/taro" class="inline-block font-bold mt-2 font-x-small color-red hover--color-red-dark">CHECK IT OUT <i class="fa fa-long-arrow-right"></i></a>
+                <a href="https://github.com/aschmelyun/taro" rel="noopener" class="inline-block font-bold mt-2 font-x-small color-red hover--color-red-dark">CHECK IT OUT <i class="fa fa-long-arrow-right"></i></a>
             </div>
         </div>
         <div class="col-xs-12 col-sm-6">
@@ -42,7 +42,7 @@
                 a front-end built with Vue and Bootstrap's grid. During regular intervals a cron job calls the Indeed.com API 
                 and pulls in jobs within the tri-county area. Signing into the administration panel lets you moderate what 
                 jobs appear on the front-end.</p>
-                <a href="https://tchiring.com" class="inline-block font-bold mt-2 font-x-small color-red hover--color-red-dark">CHECK IT OUT <i class="fa fa-long-arrow-right"></i></a>
+                <a href="https://tchiring.com" rel="noopener" class="inline-block font-bold mt-2 font-x-small color-red hover--color-red-dark">CHECK IT OUT <i class="fa fa-long-arrow-right"></i></a>
             </div>
         </div>
     </div>

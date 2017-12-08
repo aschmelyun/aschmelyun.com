@@ -3,10 +3,10 @@
         <h1 class="block font-normal font-alt" style="font-size:3.5rem;">Hello, I'm Andrew Schmelyun</h1>
         <h4 class="block font-x-large mt-2" style="font-weight:100;">A full-stack PHP developer specializing in Laravel, Vue, and PWAs</h4>
         <ul class="ls-none flex jc-center p-0 m-0 mt-6">
-            <li class="block mlr-2"><a href="https://instagram.com/aschmelyun" class="color-white hover--color-barely-clear-white anim-all-very-quick" target="_blank"><i class="fa fa-2x fa-instagram"></i></a></li>
-            <li class="block mlr-2"><a href="https://facebook.com/andrew.schmelyun.7" class="color-white hover--color-barely-clear-white anim-all-very-quick" target="_blank"><i class="fa fa-2x fa-facebook-square"></i></a></li>
-            <li class="block mlr-2"><a href="https://twitter.com/aschmelyun" class="color-white hover--color-barely-clear-white anim-all-very-quick" target="_blank"><i class="fa fa-2x fa-twitter-square"></i></a></li>
-            <li class="block mlr-2"><a href="https://github.com/aschmelyun" class="color-white hover--color-barely-clear-white anim-all-very-quick" target="_blank"><i class="fa fa-2x fa-github-square"></i></a></li>
+            <li class="block mlr-2"><a href="https://instagram.com/aschmelyun" rel="noopener" class="color-white hover--color-barely-clear-white anim-all-very-quick" target="_blank"><i class="fa fa-2x fa-instagram"></i></a></li>
+            <li class="block mlr-2"><a href="https://facebook.com/andrew.schmelyun.7" rel="noopener" class="color-white hover--color-barely-clear-white anim-all-very-quick" target="_blank"><i class="fa fa-2x fa-facebook-square"></i></a></li>
+            <li class="block mlr-2"><a href="https://twitter.com/aschmelyun" rel="noopener" class="color-white hover--color-barely-clear-white anim-all-very-quick" target="_blank"><i class="fa fa-2x fa-twitter-square"></i></a></li>
+            <li class="block mlr-2"><a href="https://github.com/aschmelyun" rel="noopener" class="color-white hover--color-barely-clear-white anim-all-very-quick" target="_blank"><i class="fa fa-2x fa-github-square"></i></a></li>
         </ul>
     </div>
     <div class="pos-absolute width-full" id="navWrapper" style="bottom:0; z-index:999; background:#212121;">
