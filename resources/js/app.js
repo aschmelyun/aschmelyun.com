@@ -9,6 +9,14 @@ $(window).scroll(function() {
     determineScrollAndOpacity();
 });
 
+$('.nav-main a').click(function(e) {
+    e.preventDefault();
+    let el = $(this).attr('href');
+    $('html, body').animate({
+        scrollTop: $(el).offset().top - 44
+    }, 750);
+});
+
 function determineScrollAndOpacity() {
     var scrollPos = $(document).scrollTop();
     var scrollCutoff = Math.ceil($(window).height() * .70);

@@ -1,4 +1,4 @@
-<header class="header-main color-white text-center flex jc-center" id="stars" style="height:100vh; background:#5a1225; background: -moz-linear-gradient(top, #5a1225 0%, #f16377 100%); background: -webkit-linear-gradient(top, #5a1225 0%, #f16377 100%); background:linear-gradient(to bottom, #5a1225 0%, #f16377 100%);">
+<header class="header-main color-white text-center flex jc-center" id="intro" style="height:100vh; background:#5a1225; background: -moz-linear-gradient(top, #5a1225 0%, #f16377 100%); background: -webkit-linear-gradient(top, #5a1225 0%, #f16377 100%); background:linear-gradient(to bottom, #5a1225 0%, #f16377 100%);">
     <div class="pos-fixed" id="headerText" style="text-shadow: 0 1px 2px rgba(0,0,0,0.25);">
         <h1 class="block font-normal font-alt" style="font-size:3.5rem;">Hello, I'm Andrew Schmelyun</h1>
         <h4 class="block font-x-large mt-2" style="font-weight:100;">A full-stack PHP developer specializing in Laravel, Vue, and PWAs</h4>
@@ -12,12 +12,12 @@
     <div class="pos-absolute width-full" id="navWrapper" style="bottom:0; z-index:999; background:#212121;">
         <nav class="nav-main">
             <ul class="ls-none flex p-0 m-0 font-small font-uppercase letter-space-1">
-                <li class="block"><a class="block color-white hover--bg-semi-clear-black anim-all-quick ptb-2 pt-3 plr-5" href="#">Home</a></li>
-                <li class="block"><a class="block color-white hover--bg-semi-clear-black anim-all-quick ptb-2 pt-3 plr-5" href="#">Projects</a></li>
-                <li class="block"><a class="block color-white hover--bg-semi-clear-black anim-all-quick ptb-2 pt-3 plr-5" href="#">Experience</a></li>
-                <li class="block"><a class="block color-white hover--bg-semi-clear-black anim-all-quick ptb-2 pt-3 plr-5" href="#">Resume</a></li>
-                <li class="block"><a class="block color-white hover--bg-semi-clear-black anim-all-quick ptb-2 pt-3 plr-5" href="#">Contact</a></li>
-                <li class="block"><a class="block color-white hover--bg-semi-clear-black anim-all-quick ptb-2 pt-3 plr-5" href="#">Blog</a></li>
+                <li class="block"><a class="block color-white hover--bg-semi-clear-black anim-all-quick ptb-2 pt-3 plr-5" href="#intro">Home</a></li>
+                <li class="block"><a class="block color-white hover--bg-semi-clear-black anim-all-quick ptb-2 pt-3 plr-5" href="#projects">Projects</a></li>
+                <li class="block"><a class="block color-white hover--bg-semi-clear-black anim-all-quick ptb-2 pt-3 plr-5" href="#experience">Experience</a></li>
+                <li class="block"><a class="block color-white hover--bg-semi-clear-black anim-all-quick ptb-2 pt-3 plr-5" href="#resume">Resume</a></li>
+                <li class="block"><a class="block color-white hover--bg-semi-clear-black anim-all-quick ptb-2 pt-3 plr-5" href="#contact">Contact</a></li>
+                <!--<li class="block"><a class="block color-white hover--bg-semi-clear-black anim-all-quick ptb-2 pt-3 plr-5" href="#">Blog</a></li>-->
             </ul>
         </nav>
     </div>
