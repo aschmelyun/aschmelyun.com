@@ -9,10 +9,10 @@
         "taro": "php taro build"
     },
     "dependencies": {
-        "calcite": "^0.1.0",
+        "calcite": "^0.2.4",
         "font-awesome": "^4.7.0",
         "jquery": "^3.2.1",
-        "laravel-mix": "^0.11.4",
+        "laravel-mix": "^2.1.11",
         "particle.js": "^1.0.7",
         "particles.js": "^2.0.0",
         "purify-css": "^1.2.5"
