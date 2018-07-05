@@ -3,8 +3,25 @@
         "content": "index",
         "output": "/",
         "vars": {
-            "title": "Andrew Schmelyun - Full-Stack PHP Developer",
+            "title": "Full-Stack PHP Developer - Andrew Schmelyun",
             "description": "Hello, I'm Andrew Schmelyun. I'm a full-stack PHP developer specializing in Laravel, Vue, and PWAs."
+        }
+    },
+    {
+        "content": "blog",
+        "output": "/blog",
+        "vars": {
+            "title": "Blog - Andrew Schmelyun",
+            "description": "Development tutorials, useful snippets, and interesting news revolving around PHP, WordPress, Laravel, Vue, and more."
+        }
+    },
+    {
+        "content": "blog.helpful-gems-eloquent",
+        "output": "/blog/helpful-gems-laravel-eloquent",
+        "vars": {
+            "title": "A few helpful gems tucked away in Laravel Eloquent - Andrew Schmelyun",
+            "description": "",
+            "summary": "Over the last year or so, I’ve been collecting and (sometimes) tweeting about methods and helpers I’ve stumbled across in Laravel’s Eloquent ORM. Most of these aren’t that obvious in the documentation, but have made a huge impact as my applications have grown in both size and complexity."
         }
     }
 ]

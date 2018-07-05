@@ -18,6 +18,9 @@
         "purify-css": "^1.2.5"
     },
     "devDependencies": {
+        "browser-sync": "^2.24.5",
+        "browser-sync-webpack-plugin": "^2.0.1",
+        "cross-env": "^5.2.0",
         "purifycss-webpack": "^0.7.0"
     }
 }

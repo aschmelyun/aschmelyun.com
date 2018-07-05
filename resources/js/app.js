@@ -9,7 +9,7 @@ $(window).scroll(function() {
     determineScrollAndOpacity();
 });
 
-$('.nav-main a').click(function(e) {
+$('.nav-main a.has-animate').click(function(e) {
     e.preventDefault();
     let el = $(this).attr('href');
     $('html, body').animate({

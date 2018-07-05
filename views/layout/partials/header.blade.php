@@ -12,12 +12,12 @@
     <div class="pos-absolute width-full" id="navWrapper" style="bottom:0; z-index:999; background:#212121;">
         <nav class="nav-main">
             <ul class="ls-none flex p-0 m-0 font-small font-uppercase letter-space-1">
-                <li class="block"><a class="block color-white hover--bg-semi-clear-black anim-all-quick ptb-2 pt-3 plr-5" href="#intro">Home</a></li>
-                <li class="block"><a class="block color-white hover--bg-semi-clear-black anim-all-quick ptb-2 pt-3 plr-5" href="#projects">Projects</a></li>
-                <li class="block"><a class="block color-white hover--bg-semi-clear-black anim-all-quick ptb-2 pt-3 plr-5" href="#experience">Experience</a></li>
-                <li class="block"><a class="block color-white hover--bg-semi-clear-black anim-all-quick ptb-2 pt-3 plr-5" href="#resume">Resume</a></li>
-                <li class="block"><a class="block color-white hover--bg-semi-clear-black anim-all-quick ptb-2 pt-3 plr-5" href="#contact">Contact</a></li>
-                <!--<li class="block"><a class="block color-white hover--bg-semi-clear-black anim-all-quick ptb-2 pt-3 plr-5" href="#">Blog</a></li>-->
+                <li class="block"><a class="has-animate block color-white hover--bg-semi-clear-black anim-all-quick ptb-2 pt-3 plr-5" href="#intro">Home</a></li>
+                <li class="block"><a class="has-animate block color-white hover--bg-semi-clear-black anim-all-quick ptb-2 pt-3 plr-5" href="#projects">Projects</a></li>
+                <li class="block"><a class="has-animate block color-white hover--bg-semi-clear-black anim-all-quick ptb-2 pt-3 plr-5" href="#experience">Experience</a></li>
+                <li class="block"><a class="has-animate block color-white hover--bg-semi-clear-black anim-all-quick ptb-2 pt-3 plr-5" href="#resume">Resume</a></li>
+                <li class="block"><a class="has-animate block color-white hover--bg-semi-clear-black anim-all-quick ptb-2 pt-3 plr-5" href="#contact">Contact</a></li>
+                <li class="block"><a class="block color-white hover--bg-semi-clear-black anim-all-quick ptb-2 pt-3 plr-5" href="/blog">Blog</a></li>
             </ul>
         </nav>
     </div>
