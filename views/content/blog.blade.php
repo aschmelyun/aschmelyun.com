@@ -17,7 +17,7 @@
             <div class="title">
                 <h1 class="is-blog-title font-normal">{{ str_replace(' - Andrew Schmelyun', '', $content['title']) }}</h1>
             </div>
-            <div class="content font-alt line-height-4">
+            <div class="content font-alt line-height-4 mb-8">
                 <p>{{ $content['summary'] }} <a href="{{ $link }}" class="font-bold mt-2 font-x-small color-red hover--color-red-dark" style="font-family: 'Roboto', sans-serif">READ MORE &rarr;</a></p>
             </div>
         @endforeach

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>So you want to get started with AR.js</title>
+<link rel="stylesheet" type="text/css" href="/assets/css/app.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700|Source+Serif+Pro" rel="stylesheet"> 
+<link rel="manifest" href='data:application/manifest+json, {"name": "ASchmelyun", "short_name": "ASchmelyun"}'></head>
+<body class="default bs-border-box">
+    <div class="wrapper">
+        <a href="/" class="home-link">AS</a>
+        <div class="main-content">
+                <div class="container wrap is-blog">
+        <div class="nav-back mb-4">
+            <a href="/blog" class="font-bold mt-2 font-x-small color-red hover--color-red-dark">&larr; ALL POSTS</a>
+        </div>
+        <header class="title">
+            <h1 class="is-blog-title font-normal">So you want to get started with AR.js</h1>
+            <h5 class="is-blog-meta font-normal font-regular color-half-clear-black mt-2">~ 5 minutes - Published on Aug 3, 2018</h5>
+        </header>
+        <main class="content font-alt mt-8 line-height-4">
+            <p>Augmented Reality seems like it’s everywhere in 2018. Between Snapchat filters, Google stickers, IKEA’s furniture preview, and now Shopify’s <a href="https://medium.com/shopify-vr/ar-shopping-gets-simpler-with-ar-quick-look-on-shopify-c2716593823f" class="color-red" target="_blank">AR Quick Look</a> feature, putting 3D objects in the physical world seems to be more desirable than ever.</p>
+            <p>While an augmented reality feature might fit nicely into an established native application, there’s a downside to those non-app-based businesses who’d like to use AR for marketing purposes. For instance, say a handbag company wants to display a 3D model of a handbag above the box it ships in when the user points their camera at their logo on the box. Traditionally, they’d have to:</p>
+            <p>
+                <ul>
+                    <li>Develop a native application using ARKit/ARCore/ARToolkit/etc</li>
+                    <li>Pay the requested fees to get it distributed to the Google Play/App Stores</li>
+                    <li>Wait for approval from either of the above stores</li>
+                    <li>Market the application to your prospective customers/users</li>
+                    <li>Hope that the user downloads and then uses the app</li>
+                </ul>
+            </p>
+            <p>All of this for what amounts to (on average) a 2–5 minute session playing around with the finished app. Additionally if it’s for a specific marketing campaign or time span, they’re more than likely not going to interact with it more than a few times.</p>
+            <p>The solution? <a href="https://github.com/jeromeetienne/AR.js/blob/master/README.md" class="color-red" target="_blank"><strong>AR.js</strong></a>, simple augmented reality directly in the browser and compatible with all modern mobile devices. Now, let’s get started!</p>
+            <p>&nbsp;</p>
+            <p><h3>What is AR.js?</h3></p>
+            <p>To boil it down, it’s essentially a Javascript framework acting as a port of ARToolkit, while leveraging other packages like <a href="https://aframe.io/" class="color-red" target="_blank">a-frame</a> and <a href="https://threejs.org/" class="color-red" target="_blank">three.js</a>. The goal being augmented reality features directly on web browsers without sacrificing performance.</p>
+            <p>As far as compatibility goes, it works on any browser capable of WebGL + WebRTC. At the publishing time of this article, that would be Chrome, Firefox, Edge, and Safari. However, the current version of Chrome for iOS is <strong>not</strong> supported as of yet.</p>
+            <p>&nbsp;</p>
+            <p><h3>Getting a project set up</h3></p>
+            <p>This assumes that you have a (local or otherwise) development environment already set up and secured with an SSL certificate. <em><strong>Why SSL?</strong> Chrome requires all sites that use scripts calling for camera access to be delivered strictly over https.</em></p>
+            <p>Following from <a href="https://medium.com/@AndraConnect?source=post_header_lockup" class="color-red" target="_blank">Alexandra Etienne’s</a> article we can have a working demo of AR.js up in just <strong>8 lines of HTML</strong>.</p>
+            <p><img src="https://cdn-images-1.medium.com/max/1600/1*9JPgSiBdvtWyx9ELbLZ2ew.png" alt="Getting started with AR.js in just 8 lines of HTML"></p>
+            <p>Throw that bad boy into an index.html file on your dev environment and open it up in your compatible browser of choice. You’ll get a request to access your camera, and on approval will see a live video feed from your device. Print out/load up the <a href="https://github.com/jeromeetienne/AR.js/blob/master/data/images/hiro.png" class="color-red" target="_blank">default hiro marker</a> image and point it at the video feed. If everything went well, you should see a semi-clear white cube fixed over the marker.</p>
+            <p>Augmented reality, on the web!</p>
+            <p>Want to remove the debug boxes from the video display? Simply add the flag ‘debugUIEnabled: false;’ to the arjs prop in the <strong>a-scene</strong> element.</p>
+            <p><img src="https://cdn-images-1.medium.com/max/1600/1*Sxab5E4oSareaJ2i87NLmQ.png" alt="Code screenshot for how to remove debug information in AR.js"></p>
+            <p>&nbsp;</p>
+            <p><h3>Using custom markers</h3></p>
+            <p>This was honestly one of the most difficult pieces for me to get working properly when I was originally learning AR.js. There’s a few tutorials out there about how to get custom markers working, but between them there’s some conflicting information. I’m going to give the run-down of what worked best for me, broken down step by step.</p>
+            <p><strong>Step 1. Decide on your marker image.</strong> For the best results this should be a simple, high-contrast, PNG image pre-cropped to be a square with a size of at least 512x512. This also has to be rotationally asymmetrical, meaning that it will always look unique regardless of the degree it’s rotated to. Here’s some good examples of marker images:</p>
+            <p><img src="https://cdn-images-1.medium.com/max/1600/1*zUxIO_eUSMyDg4Nq0FPY1g.png" alt="Examples of good AR.js markers"></p>
+            <p><strong>Step 2. Convert your image to a .patt file and an AR.js marker.</strong> Using <a href="https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html" class="color-red" target="_blank">this marker trainer</a>, upload an image that you’d like to use as a marker. If it looks good to you, then go ahead and click:</p>
+            <p>
+                <ul>
+                    <li>Download Marker: The .patt file AR.js uses to recognize the marker and display your 3D content.</li>
+                    <li>Download Image: The actual .png image with the appropriate black border to be used as the physical marker.</li>
+                </ul>
+            </p>
+            <p><strong>Step 3. Add the .patt file to your website.</strong> It really doesn’t matter where as long as it’s accessible to the application, I usually put mine in my assets folder using a structure like /img/patterns/my-marker.patt.</p>
+            <p><strong>Step 4. Add the marker to your AR.js element.</strong> Using the a-frame method, this is very simple. All you need to do is add an <strong>a-marker</strong> element with a type prop of ‘pattern’, and the relative path to your pattern file as the ‘url’ prop.</p>
+            <p>Using this method we will also need to include an <strong>a-entity camera</strong> so that the virtual camera is included in the 3D environment being rendered.</p>
+            <p><img src="https://cdn-images-1.medium.com/max/1600/1*cyOLiJDEH0qlLOKOZJXaQw.png" alt="Code screenshot of adding in a custom marker to an AR.js application"></p>
+            <p><strong>Step 5. Finally, add in the 3D model you would like to display.</strong> To complete this, we need to add in a model that’ll be shown when this marker is discovered. Thankfully, a-frame includes a bunch of primitive geometries that we can easily drop-in using some simple element names.</p>
+            <p>
+                <ul>
+                    <li>&lt;a-box&gt;&lt;/a-box&gt;</li>
+                    <li>&lt;a-box&gt;&lt;/a-box&gt;</li>
+                    <li>&lt;a-cylinder&gt;&lt;/a-cylinder&gt;</li>
+                    <li>&lt;a-plane&gt;&lt;/a-plane&gt;</li>
+                </ul>
+            </p>
+            <p>Each of these have a position prop that can be adjusted to allow you to move it around the 3D space relative to the marker position. This way your objects don’t need to sit directly on the marker but can float above it, or off to the side. For this example, I’m going to add in a red sphere that floats just slightly above the marker.</p>
+            <p><img src="https://cdn-images-1.medium.com/max/1600/1*zSw6QgOr9Ok7wYaTFlSuSQ.png" alt="Adding in a 3D model to an AR.js application"></p>
+            <p>Boom 💥</p>
+            <p>Replace the previous boilerplate with the new custom pattern code, and show your downloaded marker image to the camera. You should see a red sphere floating just above the marker icon!</p>
+            <p><img src="https://cdn-images-1.medium.com/max/1600/1*sVsjfTeLUND_hwEFx-JAOw.png" alt="A screenshot showing an example of a simple AR.js application"></p>
+            <p>This might seem pretty simple, but when you consider that we did this in just a dozen lines of HTML the power and possibility of using AR.js really shines through.</p>
+            <p>&nbsp;</p>
+            <p><h3>More advanced stuff</h3></p>
+            <p><strong>Update from Sep 16:</strong> There's a follow-up post with some more advanced tips and tricks for your AR.js applications. <a href="/blog/tips-tricks-spice-up-arjs" class="color-red">Check it out here!</a></p>
+            <p>There will be a second article for some more advanced AR.js tips and tricks. Add event listeners to your sites that fire when markers are discovered or lost, adjust the thickness of a marker border, importing images as materials, using custom 3D models, and more!</p>
+        </main>
+    </div>
+        </div>
+    </div>
+</body>
+</html>

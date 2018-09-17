@@ -16,6 +16,33 @@
         }
     },
     {
+        "content": "blog.tips-tricks-spice-up-arjs",
+        "output": "/blog/tips-tricks-spice-up-arjs",
+        "vars": {
+            "title": "Tips + tricks to spice up your AR.js projects",
+            "description": "",
+            "summary": "Okay, so you should have some foundations down from my previous article on AR.js. Let’s dive into some more interesting tidbits."
+        }
+    },
+    {
+        "content": "blog.vs-code-laravel-vue-development",
+        "output": "/blog/vs-code-laravel-vue-development",
+        "vars": {
+            "title": "Setting up VS Code for streamlined Laravel and Vue development",
+            "description": "",
+            "summary": "If you haven’t heard of VS Code by now, you’ve probably been living under a rock. It’s a lightning-fast code editor built on the Electron framework with a massive amount of extensibility and a huge library of themes and plugins, all courtesy of Microsoft. I’ve been using it for almost two years, and for the last year full-time after a transitionary period switching frequently between it and PHPStorm."
+        }
+    },
+    {
+        "content": "blog.get-started-with-arjs",
+        "output": "/blog/get-started-with-arjs",
+        "vars": {
+            "title": "So you want to get started with AR.js",
+            "description": "",
+            "summary": "Augmented Reality seems like it’s everywhere in 2018. Between Snapchat filters, Google stickers, IKEA’s furniture preview, and now Shopify’s AR Quick Look feature, putting 3D objects in the physical world seems to be more desirable than ever."
+        }
+    },
+    {
         "content": "blog.helpful-gems-eloquent",
         "output": "/blog/helpful-gems-laravel-eloquent",
         "vars": {
