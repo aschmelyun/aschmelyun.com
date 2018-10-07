@@ -96,7 +96,7 @@ $('.nav-main a.has-animate').click(function (e) {
 
 function determineScrollAndOpacity() {
     var scrollPos = $(document).scrollTop();
-    var scrollCutoff = Math.ceil($(window).height() * .70);
+    var scrollCutoff = Math.ceil($(window).height() * .50);
     var scrollOpacity = 1.0;
 
     if (scrollPos > scrollCutoff) {

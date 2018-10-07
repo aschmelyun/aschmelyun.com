@@ -8,6 +8,14 @@
         }
     },
     {
+        "content": "blizzard",
+        "output": "/blizzard",
+        "vars": {
+            "title": "A Blizzard Cover Letter - Andrew Schmelyun",
+            "description": ""
+        }
+    },
+    {
         "content": "blog",
         "output": "/blog",
         "vars": {

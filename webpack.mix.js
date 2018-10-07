@@ -3,7 +3,7 @@ let mix = require('laravel-mix').mix;
 mix.options({ 
     processCssUrls: false,
     purifyCss: {
-        paths: ['dist/*.html']
+        paths: ['dist/**/*.html']
     }
 });
 
